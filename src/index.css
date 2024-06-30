@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.filter-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.filter-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.filter-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.filter-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Custom styles for Navbar component */
+.navbar-logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.navbar-logo-md {
+  height: 4rem;
+  width: 4rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-brand-md {
+  font-size: 2.5rem;
+}
+
+.navbar-link {
+  font-size: 0.875rem;
+}
+
+.navbar-link-md {
+  font-size: 1rem;
+}
+
+.navbar-icon {
+  font-size: 1.25rem;
+}
+
+.navbar-icon-md {
+  font-size: 1.5rem;
+}
